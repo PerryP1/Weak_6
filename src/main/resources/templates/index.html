@@ -3,10 +3,10 @@
       xmlns:sec="www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8 /">
-    <title>Title</title>
+    <title>Welcome to Messages</title>
 </head>
 <body>
-<h2> Insecure Page</h2>
+<h2> Welcome to Messages</h2>
 <div sec:authorize="isAuthenticated()">
     This content is only shown to authenticted users.<br/>
     <div sec:authorize="hasAuthority('ROLE_ADMIN')">
